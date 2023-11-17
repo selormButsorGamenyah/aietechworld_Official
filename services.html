@@ -15,31 +15,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/services.css">
 
     <!--SCRIPTS-->
     <script rel="javascript" src="scripts/index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <title>AIE TECH WORLD - Home</title>
+    <title>AIE TECH WORLD - Services</title>
 </head>
 <body>
-    <header>
+
+    <div class="nav-container">
+
+        <div class="nav-logo">
+            <a href="#">
+                <img src="images/logos/aietechworldOfficialLogo.png" title="AIE TECH WORLD" alt="AIE TECH WORLD">
+            </a>
+        </div>
+        <i class="fa-solid fa-bars open-menu"></i>
+        <div class="background"></div>
+
+        <div class="nav-links-container">
+            <i class="fa-solid fa-xmark close-menu"></i>
+
+            <ul class="nav-links">
+                <li class="nav-link-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="nav-link-item dropdown-menu-branch">
+                    <a href="services.html" data-toggle="dropdown-menu"> Services <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="services.html">UI/UX</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">I.T. Ananlysis</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">Data Analytics</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">Web Design</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">Software Eng.</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">DevOps Eng.</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">Motion Graphics</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">Brand Strategist</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">I.T. Training</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-link-item dropdown-menu-branch">
+                    <a href="reference.html" data-toggle="dropdown-menu">References <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="reference.html">Education</a></li>
+                        <li class="dropdown-menu-item"><a href="reference.html">Real Estate</a></li>
+                        <li class="dropdown-menu-item"><a href="reference.html">Technology</a></li>
+                        <li class="dropdown-menu-item"><a href="reference.html">Entertainment</a></li>
+                        <li class="dropdown-menu-item"><a href="reference.html">Logistics</a></li>
+                        <li class="dropdown-menu-item"><a href="reference.html">Healthcare</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-link-item dropdown-menu-branch">
+                    <a href="about.html" data-toggle="dropdown-menu">About<i class="fa-solid fa-chevron-down"></i></a>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="about.html">Company</a></li>
+                        <li class="dropdown-menu-item"><a href="about.html">Our Methods</a></li>
+                        <li class="dropdown-menu-item"><a href="about.html">Our Team</a></li>
+                        <li class="dropdown-menu-item"><a href="about.html">Tools</a></li>
+                        <li class="dropdown-menu-item"><a href="about.html">Mission</a></li>
+                        <li class="dropdown-menu-item"><a href="about.html">History</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-link-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="hero-container">
+        <div class="text-box">
+            <h1>We are <span class="auto-input"></span></h1>
+            <p>We lead our customers' software projects to success from our office in Accra, Ghana.</p>
+    
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    
+
+    
+    <!--<header>
         <nav class="navbar">
-            <!--LOGO-->
+            
             <a class="logo" data-g-event="AIE TECH WORLD: Global Nav" data-g-action="clicked" data-g-label="AIE TECH WORLD" href="index.html">
                 <img src="images/logos/aietechworldOfficialLogo.png" title="AIE TECH WORLD" id='aie_logo' alt="AIE TECH WORLD"> 
             </a>
         
-            <!--NAVIGATION MENU -->
+           
             <ul class="nav-links">
         
-              <!-- USING CHECKBOX HACK -->
+              
               <input type="checkbox" id="checkbox_toggle" />
               <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         
-              <!-- NAVIGATION MENUS -->
+              
               <div class="menu">
         
                 <li><a href="index.html">Home</a></li>
@@ -48,14 +132,15 @@
                 <li class="services">
                   <a href="services.html">Services</a>
         
-                  <!-- DROPDOWN MENU -->
+                 
                   <ul class="dropdown">
                     <li><a href="services.html">UI/UX design</a></li>
                     <li><a href="services.html">IT Analysis</a></li>
                     <li><a href="services.html">IT Consulting</a></li>
                     <li><a href="services.html">DevOps</a></li>
                     <li><a href="services.html">Cloud Engineering</a></li>
-                    <li><a href="services.html">Maintenance & Support</a></li>
+                    <li><a href="services.html">IT Support</a></li>
+                    <li><a href="services.html">IT Training</a></li>
                   </ul>
         
                 </li>
@@ -66,24 +151,26 @@
             </ul>
           </nav>
 
-    </header>
+    </header>-->
 
-    <div class="heroBox">
+    <!--<div class="heroBox">
         <div class="heroContainer">
             <div class="heroRow">
                 <div class="herotitle">
-                    <span class="boxSubtitle">
+                    <h2 class="boxSubtitle">
                         Innovating ideologies.
-                    </span> <br> <br> 
-                    <span class="boxTitle">
+                    </h2>
+                    <h2 class="boxTitle">
                         we develop Softwares ...
-                    </span>
+                    </h2>
                 </div>
+
+                <button class="button"><span><a href="contact.html">Contact us</a> </span></button>
             </div>
         </div>
-    </div>
+    </div>-->
 
-    <section class="content">
+    <!--<section class="content">
         <div class="contentContainer">
             <div class="contentRow">
                 <div class="metthosContent">
@@ -96,13 +183,13 @@
                         <strong>AIE TECH WORLD</strong> is a software development and DevOps company that helps businesses deliver software faster and more reliably.
                         We use a combination of best practices, tools, and automation to help our customers build, deploy, and manage their applications more efficiently.
                         We are a team of experienced engineers and DevOps experts who are passionate about helping businesses succeed.
-                        <!--We understand the challenges that businesses face in today's fast-paced and ever-changing environment.
+                        We understand the challenges that businesses face in today's fast-paced and ever-changing environment.
                         That's why we are committed to providing our customers with the best possible solutions. 
                         If you are looking for a software development or DevOps company that can help you deliver software faster and more reliably,
-                        then <strong>AIE TECH WORLD</strong> is the company for you. We would be happy to discuss your needs and see how we can help you achieve your goals.-->
+                        then <strong>AIE TECH WORLD</strong> is the company for you. We would be happy to discuss your needs and see how we can help you achieve your goals.
                     </p>
 
-                    <button class="button"><span>More about us </span></button>
+                    <button class="button"><span><a href="about.html">More about us</a> </span></button>
                 </div>
 
                 <div class="methods">
@@ -141,10 +228,49 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section>
+        <div>
+            <img src="images/icon/develop.png">
+            <h2>
+                We develop for you
+            </h2>
+            <p>
+                We practice test-driven development (TDD) for all software development projects.
+                Our experts have internalized TDD and have in-depth knowledge of other methods and working methods, such as test automation, clean code, pair programming, and code reviews.
+                This ensures that the work of our experts in your project always meets the highest quality standards.
+            </p>
         </div>
 
-    </section>
+        <div>
+            <img src="images/icon/customerChat.png">
+            <h2>
+                You develop with us
+            </h2>
+            <p>
+                Our team is passionate about software development.
+                We rely on Open Source, Cloud-based Infrastructures, Test Automation and Agile working methods.
+                We offer suitable solutions in software development for your needs - from individual experts to complete teams, for all roles in software development.
+            </p>
+        </div>
+
+
+        <button class="button"><span><a href="services.html">Services</a></span></button>
+    </section>-->
+
+    <script src="scripts/index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('.auto-input', {
+          strings: ["Doers", "Makers", "Innovators"],
+          typeSpeed: 100,
+          backSpeed: 100,
+          loop: true
+        });
+    </script>
     
 </body>
 </html>
