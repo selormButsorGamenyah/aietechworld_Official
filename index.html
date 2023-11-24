@@ -61,9 +61,10 @@
 
     <div class="nav-container">
 
-        <div class="nav-logo">
+        <div class="nav-logo"> <!--Navigation-->
             <a href="index.html">
-                <img src="images/logos/aietechworldOfficialLogo.png" title="AIE TECH WORLD" alt="AIE TECH WORLD">
+                <img id="logo-default" src="images/logos/aietechworldOfficialLogo.png" title="AIE TECH WORLD" alt="AIE TECH WORLD">
+                <img id="logo-christmas" src="images/logos/AIE TECH WORLD BAR christmas.png" alt="Christmas Logo" style="display: none;">
             </a>
         </div>
         <i class="fa-solid fa-bars open-menu"></i>
@@ -85,10 +86,11 @@
                         <li class="dropdown-menu-item"><a href="services.html">I.T. Ananlysis</a></li>
                         <li class="dropdown-menu-item"><a href="services.html">Data Analytics</a></li>
                         <li class="dropdown-menu-item"><a href="services.html">Web Development</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">POS Systems</a></li>
                         <li class="dropdown-menu-item"><a href="services.html">Software Development</a></li>
                         <li class="dropdown-menu-item"><a href="services.html">DevOps Engineering</a></li>
                         <li class="dropdown-menu-item"><a href="services.html">Motion Graphics</a></li>
-                        <li class="dropdown-menu-item"><a href="services.html">Brand Strategist</a></li>
+                        <li class="dropdown-menu-item"><a href="services.html">TECH Merchandice</a></li>
                         <li class="dropdown-menu-item"><a href="services.html">I.T. Training</a></li>
                     </ul>
                 </li>
@@ -500,6 +502,28 @@
           backSpeed: 100,
           loop: true
         });
+    </script>
+
+    <script>
+        //CHRISTMAS LOGO SWITCH ANYTIME ITS XMAS
+
+        //Using the Date object to get the current date
+
+        const currentDate = new Date();
+        const currentMonth = currentDate.getMonth();
+        const currentDay = currentDate.getDate();
+
+        //Check if the current date is within the Christmas season (December 25th to January 1st):
+        const isChristmasSeason = (currentMonth === 10 && currentDay >= 23) || (currentMonth === 0 && currentDay <= 1);
+
+        //Based on the isChristmasSeason flag, toggle the display of the logos using style.display:
+        if (isChristmasSeason) {
+            document.getElementById('logo-default').style.display = 'none';
+            document.getElementById('logo-christmas').style.display = 'block';
+        } else {
+            document.getElementById('logo-default').style.display = 'block';
+            document.getElementById('logo-christmas').style.display = 'none';
+        }
     </script>
     
 </body>
